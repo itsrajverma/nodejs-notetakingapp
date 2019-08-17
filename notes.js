@@ -36,7 +36,7 @@ const saveNotes = function(notes){
 const listNotes = function(){
     const notes = loadNotes();
     notes.forEach(function(note){
-        log(chalk.blue(note.title));
+        log(chalk.blue('Title : ' + note.title + ' Body :'+note.body));
     })
 }
 
